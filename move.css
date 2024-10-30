@@ -1,0 +1,67 @@
+.title{
+    text-transform:uppercase;
+     position:absolute;
+    font-family:tahoma;
+    margin-bottom:10px;
+     left:50%;
+     animation: aniName 10s infinite;
+     transform:translate(-50%,-50%);
+    color:red;
+  }
+  @keyframes aniName {
+      0% { left: 0px; }
+    100% {  color: #cc0000; background: yellow;}
+  }
+  .flag {
+     width:300px;
+     height:200px;
+     position:absolute;
+     top:60%;
+     left:50%;
+     transform:translate(-50%,-50%)
+  }
+  .flag-element {
+      -webkit-animation:oscill 1s ease-in-out infinite alternate; 
+      -moz-animation:oscill 1s ease-in-out infinite alternate; 
+      -ms-animation:oscill 1s ease-in-out infinite alternate; 
+      animation:oscill 1s ease-in-out infinite alternate; 
+      background: url('http://i.imgur.com/8VSL8Ve.gif');
+      background-size: 300px 100%;
+      position:relative;
+      height:100%;
+      width:1px;
+      display:inline-block;
+      box-shadow:0 1px grey, 0 -1px gray;
+  }
+  @-webkit-keyframes oscill {
+      0% {
+          top: 5%;
+      }        
+      100% {
+          top: -5%;
+      }
+  }
+  @-moz-keyframes oscill {
+      0% {
+          top: 5%;
+      }        
+      100% {
+          top: -5%;
+      }
+  }
+  @-ms-keyframes oscill {
+      0% {
+          top: 5%;
+      }        
+      100% {
+          top: -5%;
+      }
+  }
+  @keyframes oscill {
+      0% {
+          top: 5%;
+      }        
+      100% {
+          top: -5%;
+      }
+  }
